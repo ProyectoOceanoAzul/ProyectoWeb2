@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* aplicar a google font a toda la pagina */
+body p, a, li, h1, h3{
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+
+
+/* CABECERA */
+header.cabecera{
+    /*para los elementos no se salcgan*/
+    overflow: hidden;   
+    
+    background: #ddd;
+}
+
+
+header.cabecera img{
+    /*imagen actue como bloque, en este caso para centrar*/
+    display: block;
+
+    margin: auto;
+}
+
+header.cabecera h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #f69f2c;
+}
+
+header.cabecera h3{
+    font-size: 25px;
+    text-align: center;
+    color: dodgerblue;
+}
+
+/* MENU */
+nav.menu{
+    background: #333;
+    overflow: hidden;
+}
+
+nav.menu ul li{
+    list-style: none;   /*sin viñetas*/
+    display: inline;    /*como un menu horizontal*/
+    
+}
+
+nav.menu ul li a{
+    color: #fff;
+    text-decoration: none;    
+    text-align: center;
+    padding: 5px;   /*observamos espacio entre elementos*/
+}
+
+nav.menu ul li a:hover{
+    color: #f69f2c;
+}
+
+
+
+/* CUERPO */
+section.cuerpo img.slider{
+    /*border: 5px solid red;    para verifiar si apunta*/
+
+    width: 100%;    /*100%  para q se adapte al tamaño de la pantalls*/
+}
+
+
+/* ICONOS */
+section.cuerpo article.iconos{
+    overflow: hidden;
+    margin: 20px 0px;
+}
+
+
+section.cuerpo article.iconos h3{
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+
+section.cuerpo article.iconos div{
+    width: 24%;
+    float: left;
+
+    overflow: hidden;   
+    /*evitar q elementos sobresalientes se escondan*/
+}
+
+
+section.cuerpo article.iconos div img{
+    width: 80%;
+    display: block; /* para q este en bloque */
+    margin: auto;
+}
+
+section.cuerpo article.iconos div p{
+    text-align: center;
+    color: cornflowerblue;
+
+}
+
+
+/* BIENVENIDA */
+section.cuerpo article.bienvenida{
+    background: #999;
+    padding: 20px;
+
+    margin: 20px;
+}
+
+
+section.cuerpo article.bienvenida p{
+    text-align: justify;
+    color: #fff;
+    margin: 20px 30px;
+}
+
+
+/* PARALLAX */
+section.cuerpo article.parallax {
+    margin: 20px;
+    background-image: url("../imagenes/fondo.jpg");
+    background-size: 200%;
+    background-attachment: fixed;   /*apara q el elemenot sea fijo*/
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: 150px;
+
+
+    overflow: hidden;   /*para q no se salga*/
+}
+
+section.cuerpo article.parallax a {
+    display: block;     /*para q elemenot sea un bloque */
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+
+    background-color: #000;
+    color: #fff;
+    margin: 50px auto 50px auto;
+
+
+    transition: 1s; /*transicion*/
+}
+
+
+section.cuerpo article.parallax a:hover{
+    background-color: orange;
+    color: #000;
+}
+
+
+section.cuerpo article.publicidad {
+    overflow: hidden;   /* para q no se salga los elementos */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section.cuerpo article.publicidad img{
+    width: 100%;
+}
+
+/* PIE DE PAGINA */
+footer.piedepagina{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+}
+
+
+
+
+
+
